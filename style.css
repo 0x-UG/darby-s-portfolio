@@ -20,6 +20,8 @@ h1 {
 h2 {
 	font-family: "Dancing Script", cursive;
 	font-size: 2.25rem;
+	margin: 0;
+	padding-bottom: 0.2em;
 }
 
 .hero__container p {
@@ -32,8 +34,17 @@ h2 {
 	margin-bottom: 0;
 }
 
+.flex-items p {
+	text-align: center;
+	margin-right: 4em;
+}
+
 .container p {
 	font-size: 1.313rem;
+}
+
+.contact-info h2 {
+	text-align: center;
 }
 /* Typography ends here */
 
@@ -42,22 +53,31 @@ h2 {
 }
 
 .hero__container {
-	max-width: 80%;
+	max-width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2em;
 	margin: 0 auto;
-	padding: 5em 3em;
+	padding: 2em 3em;
 }
 
 .darby-intro {
+	width: 50%;
+	text-align: left;
+}
+
+.hero-image {
+	max-width: 50%;
+	border: 1px solid red;
+}
+
+.hero-image img {
 	width: 50%;
 }
 
 .container {
 	display: flex;
-	gap: 4em;
+	gap: 2em;
 	text-align: left;
 	justify-content: space-between;
 	max-width: 80%;
@@ -65,7 +85,7 @@ h2 {
 }
 
 .flex-items {
-	width: 50%;
+	width: 100%;
 }
 
 .third-sect {
@@ -76,38 +96,59 @@ h2 {
 .second-sect,
 .third-sect,
 .fourth-sect {
-	padding: 5em 0;
+	padding: 1em 0;
 }
 
 img {
-	width: 100%;
+	width: 80%;
+	height: 90%;
 }
 
-.fourth-sect {
+/* .fourth-sect {
 	background-color: #824936;
 	color: white;
 }
+*/
 
 @media (max-width: 900px) {
 	.hero__container {
-		text-align: left;
-		padding: 2em 0em;
+		text-align: center;
+		max-width: 80%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.hero-image {
+		margin-bottom: 1em;
 	}
 
 	h1 {
-		margin-left: -54px;
+		text-align: center;
+		padding-top: 0.5em;
+	}
+
+	.darby-intro {
+		width: 100%;
+		text-align: center;
+		margin: 0;
 	}
 
 	.container {
-		display: block;
-		text-align: left;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 	}
 
 	.flex-items {
 		width: 100%;
 	}
 
+	.flex-items p {
+		text-align: center;
+		margin-right: 1em;
+	}
+
 	img {
-		padding: 1em 0;
+		padding: 0;
 	}
 }
