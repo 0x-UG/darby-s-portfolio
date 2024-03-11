@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Typography begins here */
+html {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-family: "Playfair Display Black", serif;
+	color: #824936;
+	font-size: 3.75rem;
+	margin-top: 0;
+	line-height: 0.9;
+}
+
+h2 {
+	font-family: "Playfair Display Black", serif;
+	font-size: 2.25rem;
+}
+
+.hero__container p {
+	font-size: 1.125rem;
+	font-weight: lighter;
+}
+
+.second-sect h2 {
+	color: #824936;
+	margin-bottom: 0;
+}
+
+.container p {
+	font-size: 1.313rem;
+}
+/* Typography ends here */
+
+.hero {
+	background-color: #f3eed9;
+}
+
+.hero__container {
+	max-width: 50%;
+	margin: 0 auto;
+	padding: 7em 3em;
+}
+
+.container {
+	display: flex;
+	gap: 4em;
+	text-align: left;
+	justify-content: space-between;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.flex-items {
+	width: 50%;
+}
+
+.third-sect {
+	background-color: #222c2a;
+	color: white;
+}
+
+.second-sect,
+.third-sect,
+.fourth-sect {
+	padding: 5em 0;
+}
+
+img {
+	width: 100%;
+}
+
+.fourth-sect {
+	background-color: #824936;
+	color: white;
+}
+
+@media (max-width: 900px) {
+	.hero__container {
+		text-align: left;
+		padding: 2em 0em;
+	}
+
+	h1 {
+		margin-left: -54px;
+	}
+
+	.container {
+		display: block;
+		text-align: left;
+	}
+
+	.flex-items {
+		width: 100%;
+	}
+
+	img {
+		padding: 1em 0;
+	}
+}
